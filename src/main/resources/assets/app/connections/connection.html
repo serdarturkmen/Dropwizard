@@ -1,0 +1,36 @@
+<h4>Find Connections By UploadCode</h4>
+<br>
+<div class="col-lg-6">
+    <div class="input-group">
+        <input type="text" class="form-control" ng-model="value" placeholder="Search by Code...">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-click="searchFiles(value)">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+</div><!-- /.col-lg-6 -->
+<div>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Protocol</th>
+            <th>EventCount</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="connection in connections">
+            <td> {{$index}} </td>
+            <td>{{connection.sourceIp}}</td>
+            <td>{{connection.destinationIp}}</td>
+            <td>{{connection.protocol}}</td>
+            <td>{{connection.eventCount}}</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+</div>

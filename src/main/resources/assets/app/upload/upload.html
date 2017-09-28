@@ -1,0 +1,12 @@
+<form class="form-inline">
+  <div class="form-group">
+    <label for="inputFile">File :</label>
+    <input type="file" id="inputFile" class="form-control" placeholder="upload" file-model="myFile">
+  </div>
+  <div class="form-group">
+    <label for="uploadCode">Upload code</label>
+    <input ng-model="uploadCode" id="uploadCode" type="text" class="form-control" placeholder="enter code">
+  </div>
+    <button type="submit" class="btn btn-default" ng-click="uploadFile('post')">Post</button>
+  <button type="submit" class="btn btn-default" ng-click="uploadFile('path')">Patch</button>
+</form>

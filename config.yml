@@ -1,0 +1,11 @@
+#
+# For defaults, see: http://dropwizard.codahale.com/manual/core/#configuration-defaults
+#
+template: Hello, %s!
+defaultName: Stranger
+server:
+  type: simple
+  rootPath: '/api/*'
+  applicationContextPath: /
+
+fileLocation: D:/

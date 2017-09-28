@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+<head>
+    <meta charset="utf-8">
+    <title>Dropwizard App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app/css/app.css">
+    <style>[ng-cloak] {
+        display: none;
+    }</style>
+</head>
+<body ng-app="myApp">
+<ul class="nav nav-tabs">
+    <li role="presentation"><a ng-class="{selected: status == ''} " href="#">Home</a></li>
+    <li role="presentation"><a ng-class="{selected: status == 'active'}" href="#!connections">Connections</a></li>
+    <li role="presentation"><a ng-class="{selected: status == 'active'}" href="#!files">Files</a></li>
+    <li role="presentation"><a ng-class="{selected: status == 'active'}" href="#!graph">Graph</a></li>
+</ul>
+
+<br>
+<ng-view></ng-view>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/angular-resource/angular-resource.js"></script>
+<script src="app/app.js"></script>
+<script src="app/upload/uploadCtrl.js"></script>
+<script src="app/files/fileCTRL.js"></script>
+<script src="app/connections/connectionCTRL.js"></script>
+<script src="app/graph/graphCTRL.js"></script>
+<script src="app/graph/graphDirective.js"></script>
+<script src="app/service/service.js"></script>
+<script src="http://d3js.org/d3.v2.js"></script>
+
+</body>
+</html>
