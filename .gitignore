@@ -26,3 +26,6 @@ nbdist/
 /src/main/webapp/
 /node_modules
 /src/main/resources/rebel.xml
+/.idea/
+src/main/resources/uploads/
+src/test/
