@@ -1,4 +1,4 @@
 # Dropwizard
-D3.js
-Paquet
-Jdbi
+*D3.js
+*Paquet
+*Jdbi
